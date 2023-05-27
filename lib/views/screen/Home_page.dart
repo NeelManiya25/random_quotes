@@ -30,25 +30,15 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         centerTitle: true,
         actions: [
+          Icon(Icons.refresh),
 
         ],
       ),
       body: Container(
-       child:Row(
-         children: [
-           fetch("https://type.fit/api/quotes");
-        .then((response) {
-    return response.json();
-    })
-        .then((data) {
-    var console;
-    console.log(data);
-    });
-         ],
-       ),
-      ),
-    );
-  }
 
+
+        ),
+      );
+  }
 }
 
